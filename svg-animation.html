@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Animating SVG Attributes</title>
+
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .page {
+        width: 1280px;
+      }
+      .row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+      .svg-wrapper {
+        width: 130px;
+        text-align: center;
+        border: 1px solid #d5d5d5;
+        margin-right: 20px;
+        box-sizing: border-box;
+      }
+      svg {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="row">
+        <div class="svg-wrapper">
+          <svg>
+            <circle class="my-circle" fill="#0c87ff" cx="65" cy="60" r="50" />
+          </svg>
+          <button id="play-circle">Circle Radius</button>
+        </div>
+        <div class="svg-wrapper">
+          <svg>
+            <ellipse
+              class="my-ellipse"
+              fill="#0c87ff"
+              cx="65"
+              rx="60"
+              ry="60"
+              cy="60"
+              origin="0 0"
+            ></ellipse>
+          </svg>
+          <button id="play-ellipse">Ellipse RadiusY</button>
+        </div>
+        <div class="svg-wrapper">
+          <svg>
+            <rect
+              class="my-rect"
+              width="100"
+              height="100"
+              fill="#0c87ff"
+              origin="0 0"
+              x="15"
+              y="15"
+            ></rect>
+          </svg>
+          <button id="play-rect">Rect width/height</button>
+        </div>
+        <div class="svg-wrapper">
+          <svg>
+            <path
+              class="my-star"
+              d="M 712 382.666 L 725.720412519 429.143826677 L 772.0002535 428.501666695 L 734.200093795 456.584383323 L 749.082195997 502.665333305 L 712 473.54358 L 674.917804003 502.665333305 L 689.799906205 456.584383323 L 651.9997465 428.501666695 L 698.279587481 429.143826677 Z"
+              fill="#0c87ff"
+              transform="matrix(1, 0.000056, -0.000056, 1, -651.974205, -382.702622)"
+            ></path>
+          </svg>
+          <button id="play-star">Morph Star</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="svg-wrapper">
+          <svg>
+            <circle class="my-circle2" fill="#0c87ff" cx="65" cy="60" r="50" />
+          </svg>
+          <button id="play-circle2">Fill</button>
+        </div>
+        <div class="svg-wrapper">
+          <svg>
+            <ellipse
+              class="my-ellipse2"
+              fill="#0c87ff"
+              stroke-width="5px"
+              stroke="#000"
+              cx="65"
+              cy="65"
+              rx="50"
+              ry="50"
+              origin="0 0"
+            ></ellipse>
+          </svg>
+          <button id="play-ellipse2">Stroke</button>
+        </div>
+        <div class="svg-wrapper">
+          <svg>
+            <rect
+              class="my-rect2"
+              width="100"
+              height="100"
+              fill="rgba(0,0,0,0.2)"
+              stroke="#000"
+              stroke-width="3px"
+              origin="0 0"
+              x="15"
+              y="15"
+            ></rect>
+          </svg>
+          <button id="play-rect2">Dasharray</button>
+        </div>
+        <div class="svg-wrapper">
+          <svg>
+            <path
+              class="my-star2"
+              stroke-width="3px"
+              stroke="#000"
+              d="M 712 382.666 L 725.720412519 429.143826677 L 772.0002535 428.501666695 L 734.200093795 456.584383323 L 749.082195997 502.665333305 L 712 473.54358 L 674.917804003 502.665333305 L 689.799906205 456.584383323 L 651.9997465 428.501666695 L 698.279587481 429.143826677 Z"
+              fill="rgba(0,0,0,0.2)"
+              transform="matrix(1, 0, -0.000056, 1, -651.974205, -382.702622)"
+            ></path>
+          </svg>
+          <button id="play-star2">Dashoffset</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="svg-wrapper" style="width: 700px">
+          <svg>
+            <text
+              class="my-text"
+              x="0"
+              y="140"
+              stroke="#000"
+              stroke-width="3px"
+              fill="none"
+              style="font-size: 154px"
+            >
+              Rakib
+            </text>
+          </svg>
+          <button id="play-text">Dashoffset and Fill</button>
+        </div>
+      </div>
+    </div>
+    <script src="svg-anime.js" type="module"></script>
+  </body>
+</html>

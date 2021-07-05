@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime.js Transform</title>
+    <script src="transform.js" type="module" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #page {
+        height: 100vh;
+        border: 1px solid red;
+        position: relative;
+        overflow: hidden;
+      }
+      #info {
+        width: 250px;
+        height: 50px;
+        background: green;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        border-radius: 20px;
+        transform-origin: bottom right;
+        min-height: 50px;
+      }
+      .roll {
+        width: 100px;
+        height: 100px;
+        background: yellow;
+        margin: 130px auto;
+          transform-origin: top bottom;
+
+      }
+      .roll2{
+          background:springgreen;
+          margin-left: 2rem;
+      }
+      .roll3{
+          background:black;
+          margin-top: 2rem;
+      }
+      .roll4{
+          background:crimson;
+          margin-right: 14rem;
+          transform-origin: top right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page" class="page">
+      <div class="roll">
+      </div >
+      <div class="roll roll2">
+      </div >
+      <div class="roll roll3">
+      </div >
+      <div class="roll roll4">
+      </div >
+        <div id="info">
+          <p>This World Shall Know Pain</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
