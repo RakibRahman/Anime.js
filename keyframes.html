@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime.js Playback Controls</title>
+    <script src="keyframes.js" type="module" defer></script>
+    <style>
+      .container {
+        display: grid;
+        place-items: center;
+        margin: 100px auto;
+        background: black;
+        padding: 2rem;
+      }
+      .box1,
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background: pink;
+      }
+      .btn {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .bx {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bx">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div>
+      <div class="btn">
+        <button id="play1">Box 1</button>
+        <button id="play2">Box 2</button>
+      </div>
+    </div>
+  </body>
+</html>
