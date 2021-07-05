@@ -77,12 +77,12 @@ const textAnim = anime
     strokeDasharray: [932, 932],
     strokeDashoffset: [932, 0],
     easing: "easeInOutSine",
-    duration: 2000,
+    duration: 7000,
     autoplay: false,
   })
   .add({
     targets: ".my-text",
-    fill: ["#fff", "#00ff00"],
+    fill: ["#fff", "#000"],
     duration: 500,
     easing: "linear",
   });
